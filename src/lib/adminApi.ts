@@ -2,7 +2,7 @@
  * Admin panel API client for backend /api/v1/admin
  */
 
-const BASE_URL = 'http://localhost:4000/api/v1/admin';
+const BASE_URL = process.env.VITE_ADMIN_API_URL;
 
 export interface ApiResponse<T = unknown> {
   success: boolean;
